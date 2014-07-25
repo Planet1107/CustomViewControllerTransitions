@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="DropdownNavigation" customModuleProvider="target">
+            <connections>
+                <outlet property="tableViewColors" destination="6fD-Ho-168" id="cxi-iw-TAM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6fD-Ho-168">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LwO-xc-mp4"/>
+                        <outlet property="delegate" destination="-1" id="ECn-1W-i0Q"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6fD-Ho-168" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6yo-bh-3xn"/>
+                <constraint firstAttribute="bottom" secondItem="6fD-Ho-168" secondAttribute="bottom" id="Lq1-Nl-mWR"/>
+                <constraint firstItem="6fD-Ho-168" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OtM-yT-FpC"/>
+                <constraint firstAttribute="trailing" secondItem="6fD-Ho-168" secondAttribute="trailing" id="u5K-SR-W7B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="135" y="-186.5"/>
+        </view>
+    </objects>
+</document>
